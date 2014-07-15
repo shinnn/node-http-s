@@ -1,9 +1,8 @@
 # http-s 
 
 [![NPM version](https://badge.fury.io/js/http-s.svg)](http://badge.fury.io/js/http-s)
-[![Build Status](https://travis-ci.org/shinnn/node-http-s.svg?branch=master)](https://travis-ci.org/shinnn/http-s)
-[![Dependency Status](https://david-dm.org/shinnn/node-http-s.svg)](https://david-dm.org/shinnn/http-s)
-[![devDependency Status](https://david-dm.org/shinnn/node-http-s/dev-status.svg)](https://david-dm.org/shinnn/http-s#info=devDependencies)
+[![Build Status](https://travis-ci.org/shinnn/node-http-s.svg?branch=master)](https://travis-ci.org/shinnn/node-http-s)
+[![devDependency Status](https://david-dm.org/shinnn/node-http-s/dev-status.svg)](https://david-dm.org/shinnn/node-http-s#info=devDependencies)
 
 A [Node][node] module to load the [http][http] or [https][https] module accordingly to the protocol name
 
