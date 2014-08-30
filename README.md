@@ -2,6 +2,7 @@
 
 [![NPM version](https://badge.fury.io/js/http-s.svg)](http://badge.fury.io/js/http-s)
 [![Build Status](https://travis-ci.org/shinnn/node-http-s.svg?branch=master)](https://travis-ci.org/shinnn/node-http-s)
+[![Build status](https://ci.appveyor.com/api/projects/status/ygrt2hgh5iba4jtt)](https://ci.appveyor.com/project/ShinnosukeWatanabe/node-http-s)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/node-http-s.svg)](https://coveralls.io/r/shinnn/node-http-s)
 [![devDependency Status](https://david-dm.org/shinnn/node-http-s/dev-status.svg)](https://david-dm.org/shinnn/node-http-s#info=devDependencies)
 
