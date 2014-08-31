@@ -30,15 +30,12 @@ npm install --save http-s
 var httpOrHttps = require('http-s');
 ```
 
-### httpOrHttps(urlObject)
+### httpOrHttps(*urlObject*)
 
+*urlObject*: `Object` (which has `protocol` property)  
 Return: [http][http] or [https][https]
 
-It accepts an `Object` which has `protocol` property.
-
 It returns [http][http] module if the `protocol` property is `"http:"`, or returns [https][https] module if the property is `"https:"`.
-
-It throws an error when the `protocol` property is neither `"http:"` nor `"https:"`.
 
 ```javascript
 httpOrHttps({protocol: 'https:'}); //=> https
@@ -50,9 +47,12 @@ var options = url.parse('http://nodejs.org/api/url.html');
 httpOrHttps(options); //=> http
 ```
 
-### httpOrHttps(urlString)
+### httpOrHttps(*urlString*)
 
-It also accepts a `String` instead of an `Object`. The string is automatically parsed with [`url.parse()`](http://nodejs.org/api/url.html#url_url_parse_urlstr_parsequerystring_slashesdenotehost).
+*urlString*: `String`  
+Return: [http][http] or [https][https]
+
+When it takes a string as an argument instead of an object, it automatically parses the string with [`url.parse()`](http://nodejs.org/api/url.html#url_url_parse_urlstr_parsequerystring_slashesdenotehost).
 
 ```javascript
 httpOrHttps('http://nodeschool.io/'); //=> http
