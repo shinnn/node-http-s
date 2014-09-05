@@ -62,7 +62,7 @@ httpOrHttps('http://nodeschool.io/'); //=> http
 
 Copyright (c) 2014 [Shinnosuke Watanabe](https://github.com/shinnn)
 
-Licensed under [the MIT LIcense](./LICENSE).
+Licensed under [the MIT License](./LICENSE).
 
 [node]: http://nodejs.org/
 [http]: http://nodejs.org/api/http.html#http_http
