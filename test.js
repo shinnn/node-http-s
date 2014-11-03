@@ -6,7 +6,7 @@ var url = require('url');
 
 var test = require('tape');
 
-var httpOrHttps = require('require-main')();
+var httpOrHttps = require('./');
 
 test('http-s', function(t) {
   var behaviors = [
