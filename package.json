@@ -39,6 +39,10 @@
     "istanbul-coveralls": "^1.0.1",
     "jscs": "^1.7.3",
     "tap-spec": "^1.0.1",
-    "tape": "^3.0.1"
+    "tape": "^3.0.2"
+  },
+  "jscsConfig": {
+    "preset": "google",
+    "maximumLineLength": 98
   }
 }
