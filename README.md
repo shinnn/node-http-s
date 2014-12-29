@@ -1,12 +1,11 @@
 # http-s 
 
-[![NPM version](https://badge.fury.io/js/http-s.svg)](http://badge.fury.io/js/http-s)
 [![Build Status](https://travis-ci.org/shinnn/node-http-s.svg?branch=master)](https://travis-ci.org/shinnn/node-http-s)
-[![Build status](https://ci.appveyor.com/api/projects/status/ygrt2hgh5iba4jtt)](https://ci.appveyor.com/project/ShinnosukeWatanabe/node-http-s)
-[![Coverage Status](https://img.shields.io/coveralls/shinnn/node-http-s.svg)](https://coveralls.io/r/shinnn/node-http-s)
+[![Build status](https://ci.appveyor.com/api/projects/status/ygrt2hgh5iba4jtt?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/node-http-s)
+[![Coverage Status](https://img.shields.io/coveralls/shinnn/node-http-s.svg?style=flat)](https://coveralls.io/r/shinnn/node-http-s)
 [![devDependency Status](https://david-dm.org/shinnn/node-http-s/dev-status.svg)](https://david-dm.org/shinnn/node-http-s#info=devDependencies)
 
-A [Node][node] module to load the [http][http] or [https][https] module accordingly to the protocol name
+A [Node](http://nodejs.org/) module to load the [http][http] or [https][https] module accordingly to the protocol name
 
 ```javascript
 var httpOrHttps = require('http-s');
@@ -18,10 +17,19 @@ httpOrHttps({protocol: 'http:'}); // equivalent of `require('http')`
 
 ## Installation
 
-[Install with npm](https://www.npmjs.org/doc/cli/npm-install.html). (Make sure you have installed [Node][node])
+[![NPM version](https://img.shields.io/npm/v/http-s.svg?style=flat)](https://www.npmjs.com/package/http-s)
+[![Bower version](https://img.shields.io/bower/v/http-s.svg?style=flat)](https://github.com/shinnn/node-http-s/releases)
 
+### [npm](https://www.npmjs.com/)
+
+```sh
+npm install http-s
 ```
-npm install --save http-s
+
+### [bower](http://bower.io/)
+
+```sh
+bower install http-s
 ```
 
 ## API
@@ -64,6 +72,5 @@ Copyright (c) 2014 [Shinnosuke Watanabe](https://github.com/shinnn)
 
 Licensed under [the MIT License](./LICENSE).
 
-[node]: http://nodejs.org/
 [http]: http://nodejs.org/api/http.html#http_http
 [https]: http://nodejs.org/api/https.html#https_https
