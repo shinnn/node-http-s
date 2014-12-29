@@ -11,7 +11,7 @@ module.exports = function httpOrHttps(options) {
   if (typeof options === 'string') {
     options = parseUrl(options);
   } else if (typeof options !== 'object') {
-    throw new TypeError('Expecting a string or object.');
+    throw new TypeError('Argument to http-s must be a string or an object.');
   }
 
   if (options.protocol === 'http:') {
