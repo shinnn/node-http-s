@@ -1,6 +1,6 @@
 {
   "name": "http-s",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Returns http or https module accordingly to the protocol name",
   "repository": "shinnn/http-s",
   "author": {
