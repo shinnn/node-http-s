@@ -1,5 +1,7 @@
 # http-s 
 
+[![NPM version](https://img.shields.io/npm/v/http-s.svg?style=flat)](https://www.npmjs.com/package/http-s)
+[![Bower version](https://img.shields.io/bower/v/http-s.svg?style=flat)](https://github.com/shinnn/node-http-s/releases)
 [![Build Status](https://travis-ci.org/shinnn/node-http-s.svg?branch=master)](https://travis-ci.org/shinnn/node-http-s)
 [![Build status](https://ci.appveyor.com/api/projects/status/ygrt2hgh5iba4jtt?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/node-http-s)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/node-http-s.svg?style=flat)](https://coveralls.io/r/shinnn/node-http-s)
@@ -11,14 +13,11 @@ A [Node](http://nodejs.org/) module to load the [http][http] or [https][https] m
 var httpOrHttps = require('http-s');
 
 httpOrHttps('http://nodejs.org/'); // equivalent of `require('http')`
-httpOrHttps('https://www.npmjs.org/'); // equivalent of `require('https')`
+httpOrHttps('https://www.npmjs.com/'); // equivalent of `require('https')`
 httpOrHttps({protocol: 'http:'}); // equivalent of `require('http')`
 ```
 
 ## Installation
-
-[![NPM version](https://img.shields.io/npm/v/http-s.svg?style=flat)](https://www.npmjs.com/package/http-s)
-[![Bower version](https://img.shields.io/bower/v/http-s.svg?style=flat)](https://github.com/shinnn/node-http-s/releases)
 
 ### [npm](https://www.npmjs.com/)
 
