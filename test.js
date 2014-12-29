@@ -4,12 +4,12 @@ var http = require('http');
 var https = require('https');
 var url = require('url');
 
+var httpOrHttps = require('./');
 var test = require('tape');
 
-var httpOrHttps = require('./');
-
 test('http-s', function(t) {
-  var behaviors = [
+  var specs = [
+    'should have a function name.',
     'should load `http` module when the string has http protocol.',
     'should load `http` module when the object has http property.',
     'should load `https` module when the string has https protocol.',
@@ -20,16 +20,18 @@ test('http-s', function(t) {
     'should throw an error when the object doesn\'t have http or https property.'
   ];
 
-  t.plan(behaviors.length);
+  t.plan(specs.length);
 
-  t.deepEqual(httpOrHttps('http://nodejs.org/'), http, behaviors[0]);
-  t.deepEqual(httpOrHttps(url.parse('http://www.ecmascript.org/')), http, behaviors[1]);
-  t.deepEqual(httpOrHttps('https://www.npmjs.org/'), https, behaviors[2]);
-  t.deepEqual(httpOrHttps(url.parse('https://github.com/')), https, behaviors[3]);
-  t.throws(httpOrHttps.bind(null, 1234), TypeError, behaviors[4]);
-  t.throws(httpOrHttps.bind(null, 'foo'), behaviors[5]);
-  t.throws(httpOrHttps.bind(null, 'ws://echo.websocket.org'), behaviors[6]);
-  t.throws(httpOrHttps.bind(null, url.parse('git://github.com/npm/npm.git')), behaviors[7]);
+  t.equal(httpOrHttps.name, 'httpOrHttps', specs.shift());
+
+  t.deepEqual(httpOrHttps('http://nodejs.org/'), http, specs.shift());
+  t.deepEqual(httpOrHttps(url.parse('http://www.ecmascript.org/')), http, specs.shift());
+  t.deepEqual(httpOrHttps('https://www.npmjs.com/'), https, specs.shift());
+  t.deepEqual(httpOrHttps(url.parse('https://github.com/')), https, specs.shift());
+  t.throws(httpOrHttps.bind(null, 1234), TypeError, specs.shift());
+  t.throws(httpOrHttps.bind(null, 'foo'), specs.shift());
+  t.throws(httpOrHttps.bind(null, 'ws://echo.websocket.org'), specs.shift());
+  t.throws(httpOrHttps.bind(null, url.parse('git://github.com/npm/npm.git')), specs.shift());
 
   t.end();
 });
