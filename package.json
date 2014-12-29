@@ -1,7 +1,7 @@
 {
   "name": "http-s",
   "version": "0.1.0",
-  "description": "Returns built-in http or https module accordingly to the protocol name",
+  "description": "Returns http or https module accordingly to the protocol name",
   "repository": "shinnn/http-s",
   "author": {
     "name": "Shinnosuke Watanabe",
@@ -33,15 +33,18 @@
     "load"
   ],
   "devDependencies": {
-    "eslint": "^0.10.1",
+    "eslint": "^0.10.2",
     "istanbul": "^0.3.5",
     "istanbul-coveralls": "^1.0.1",
-    "jscs": "^1.8.1",
-    "tap-spec": "^2.1.1",
+    "jscs": "^1.9.0",
+    "tap-spec": "^2.1.2",
     "tape": "^3.0.3"
   },
   "jscsConfig": {
     "preset": "google",
     "maximumLineLength": 98
+    "maximumLineLength": 98,
+    "requireBlocksOnNewline": true,
+    "validateLineBreaks": "LF"
   }
 }
